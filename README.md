@@ -25,7 +25,7 @@ cd WaveModulator
 Ejecuta el script principal:
 
 ```
-python wave_modulation.py
+python waveModulate.py
 ```
 Sigue las indicaciones interactivas para ingresar la cadena binaria, la duración del bit, la frecuencia de la portadora y la amplitud.
 
