@@ -109,7 +109,7 @@ def psk8_modulation(cadena_binaria, duracion_bit, frecuencia_portadora, amplitud
             '111': -np.pi / 4        # Ángulo de fase para '111' es -π/4 radianes (-45 grados)
         }
 
-        # Validar que la cadena_binaria tenga una longitud múltiplo de 3
+        # Validar que la cadena_binaria solo contenga combinaciones válidas de tres bits
         if len(cadena_binaria) % 3 != 0:
             print("La cadena binaria debe tener una longitud múltiplo de 3.")
             cadena_binaria = input("Ingresa una cadena de 0s y 1s (longitud múltiplo de 3): ")
@@ -288,7 +288,7 @@ while True:
             print("La cadena binaria solo puede contener 0s y 1s.")
             continue
     elif opcion == 7 or opcion == 5:
-        if len(cadena_binaria) % 2 != 0:
+        if len(cadena_binaria) % 3 != 0:
             print("La cadena binaria debe tener una longitud múltiplo de 3 para 8-PSK Y 8-QAM.")
             continue
         valid_chars = set("01")
